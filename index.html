@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="./styles.css">
+<title>index.html</title>
+<style>
+table, td, th {border: 1px solid;border-color: blue;border-bottom-color:red}
+</style>
+</head>
+<body>
+<h1>Luka Doncic, a Slovenian basketball player, has the potential to be the greatest basketball player of all time. 
+<img src="Luka1.jpeg" alt="" width="300" height="300"></h1>
+<h2>Born in 1999, here are some of Luka's stats for his NBA seasons. </h2>
+<table> <tr> <th>Points Made</th> <th> Points Attempted </th> </tr>
+		<tr> <th>10000 </th> <th> 10001 </th> </tr> 
+</table>
+<h3>Luka first played for Slovenia and got drafted to the league when he was 17. I consider him to be The <abbr title= "Greatest of All Time"> GOAT</abbr></h3>
+	<a href="https://en.wikipedia.org/wiki/Luka_Don%C4%8Di%C4%87"> Check out Luka's biography! </a>
+<p><em>Luka Doncic</em> will become the most talked about player in the years to come. He plays for the Dallas Mavericks as a point guard. Him and Kristaps Porzingis were supposed to take a championship, but KP recently got traded to the Nets.
+This is actually benefical for <b>Luka Doncic </b> as Kristaps was starting to become inefficient and downright "soft".</p>
+<p>The main point of this website is to:</p>
+<ul>
+<li>Show you that Luka Doncic is better than Kobe Bryant</li>
+<li>Show you that Luka Doncic is better than Michael Jordan</li>
+<li>Show you that Luka Doncic is better than Lebron James</li>
+</ul>
+<p>Next, I am going to add the following two numbers and display the result, Luka's jersey number</p>
+<p>First number:<span id= "firstNum">70</span> <br></p>
+<p>Second number: <span id= "secondNum">7</span> </p>
+<p>Therefore, the sum of the two of those numbers is: <span id=
+"answer">(placeholder for the answer)</span></p>
+<input type="button" id="sumButton" value="Click to add!">
+
+<script>
+function displaySum() {
+let firstNum = Number(document.getElementById('firstNum').innerHTML)
+let secondNum = Number(document.getElementById('secondNum').innerHTML)
+let total = firstNum + secondNum;
+document.getElementById("answer").innerHTML = ` ${firstNum} + ${secondNum}, equals to
+${total}` ;
+}
+document.getElementById('sumButton').addEventListener("click", displaySum);
+</script>
+</body>
+</html>
